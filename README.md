@@ -1,3 +1,39 @@
+# DOM manipulation lesson
+
+[Português (Brasil)](README.pt-BR.md)
+
+## Idea and process
+
+Educational source reviewed on 2026-10-01. No dated plan, wireframes or personal development diary was found in the reviewed files. This README records the implemented exercise without inventing process history. No backend or database is part of the reviewed structure.
+
+## Architecture and design
+
+index.html is a Bootstrap 3.3.7 CSS fixture with navigation, a jumbotron and a lead paragraph. The only loaded local script is js/app.js, which logs Hello World. js/transcript.js is a separate console lesson for finding nodes, creating elements and changing a list, not an active application feature. It contains mistakes such as passing a collection to insertBefore, getElementByTagName and a jQuery-like find chain on a DOM collection. The page loads no Bootstrap JavaScript for its collapse control.
+
+## Local preview
+
+```bash
+python3 -m http.server 8000
+```
+
+Open `http://localhost:8000/index.html`. No package install is required by the reviewed static files; external fonts/libraries need network access. This command was not run in the documentation update.
+
+## Testing and limitations
+
+No automated test suite was found in the reviewed root listing. Browser behavior was not tested and no public deployment was verified here. Use the transcript section by section, checking each selector/node type. Test real navigation and mobile collapse separately; Bootstrap styling alone does not make the control functional. Review the missing page title and keyboard behavior before reuse.
+
+## Snapshots
+
+No application screenshot was verified or added. Future captures should use dated files under `docs/assets/`, cover initial and changed states on desktop/mobile, and be labeled as a lesson fixture. Add links only after the images exist.
+
+## Credits and licensing
+
+Based on [Code Institute's Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template) and course exercises. Preserve third-party code, images and library rights. No new license is applied. The original README is retained below as historical reference, not current setup advice.
+
+---
+
+## Original README
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Iuri Johansson,
